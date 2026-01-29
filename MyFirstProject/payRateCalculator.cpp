@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+double calculateOvertime(int totalHours, double rate);
+
 int main()
 {
     int hours; 
@@ -17,5 +19,16 @@ int main()
 	cout << "Payment per month is: $" << paymentPerMonth << endl;
 	cout << "Payment across internship is: $" << paymentAcrossInternship << endl;
     cout << "Gabriel Paniagua!\n";
+
+    double overtimePay = calculateOvertime(45, 17.50);
+    cout << "Total Pay with Overtime is " << overtimePay << endl;
+}
+
+double calculateOvertime(int totalHours, double rate) {
+    int overtimeHours = totalHours - 40;
+    if (overtimeHours <= 40) {
+        return totalHours;
+    }
+    return (totalHours * rate) + (overtimeHours * rate * 1.5);
 }
 
