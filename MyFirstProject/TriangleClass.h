@@ -2,6 +2,7 @@
 class TriangleClass
 {
 public:
+	Traingle(double, double);
 	double getHeight();
 	double getBase();
 	void setBase(double);
