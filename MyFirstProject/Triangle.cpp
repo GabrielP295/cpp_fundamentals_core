@@ -1,31 +1,23 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
+#include "Triangle.h";
 
-double calcAreaOfTriangle(double base, double height);
-
-int main() {
-	double base;
-	double height;
-	while (true) {
-		try {
-			cout << "Enter the height of a triangle: ";
-			cin >> height;
-			cout << "Enter the base of a triangle: ";
-			cin >> base;
-			double area = calcAreaOfTriangle(base, height);
-			cout << "Area of a triangle is: " << area << endl;
-			break;
-		}
-		catch (invalid_argument& e) {
-			cout << "Please input a valid value for base/height.\n" << endl;
-		}
-	}
+Triangle::Triangle(double height, double base) {
+	this->height = height;
+	this->base = base;
+	this->area = 0;
 }
 
-double calcAreaOfTriangle(double base, double height) {
-	if (base < 0 || height < 0) {
-		throw invalid_argument("Base or height cannot be negative.");
-	}
-	return base * height * 0.5;
+void Triangle::calculateArea() {
+	this->area = (this->base * this->height) / 2;
+}
+
+double Triangle::getArea() {
+	return this->area;
+}
+
+void Triangle::setHeight(double height) {
+	this->height = height;
+}
+
+void Triangle::setBase(double base) {
+	this->base = base;
 }
