@@ -127,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Triangle.cpp" />
-    <ClCompile Include="TriangleSample.cpp" />
+    <ClCompile Include="TriangleClass.cpp" />
+    <ClCompile Include="TriangleTester.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TriangleClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
