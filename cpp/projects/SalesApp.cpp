@@ -1,25 +1,24 @@
 #include <iostream>
 #include <string>
+#include "SalesAnalysis.h"
 using namespace std;
 
 int main() {
 	string store;
-	int numOfMonths;
+	int numberOfMonths;
 	double monthlySales;
-	double totalSales = 0;
 
-	cout << "Best Buy Sales Analysis\n";
-	cout << "========================\n";
+	cout << "Sales Analysis\n";
 	cout << "Enter the store name: ";
 	getline(cin, store);
-	cout << "How many months do you want to evaluate? ";
-	cin >> numOfMonths;
-
-	for (int i = 1; i <= numOfMonths; i++) {
-		cout << "Enter Sales Month # " << i << ": ";
+	cout << "How many months do you want to enter sales for? ";
+	cin >> numberOfMonths;
+	
+	SalesAnalysis sales(store);
+	for (int i = 1; i <= numberOfMonths; i++) {
+		cout << "Enter the sales for month " << i << ": $";
 		cin >> monthlySales;
-		totalSales += monthlySales;
+		sales.AcumSales(monthlySales);
 	}
-
-	cout << "Total Sales: " << totalSales;
+	cout << "Total Sales: $" << sales.getTotalSales();
 }
