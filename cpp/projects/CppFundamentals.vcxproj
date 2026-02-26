@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BankAccount.cpp" />
-    <ClCompile Include="BankApp.cpp" />
+    <ClCompile Include="SalesAnalysis.cpp" />
+    <ClCompile Include="SalesApp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BankAccount.h" />
+    <ClInclude Include="SalesAnalysis.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
