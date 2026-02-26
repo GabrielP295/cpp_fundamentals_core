@@ -2,6 +2,7 @@
 
 SalesAnalysis::SalesAnalysis(string store) {
 	this->store = store;
+	this->totalSales = 0;
 }
 
 void SalesAnalysis::AcumSales(double sales) {
