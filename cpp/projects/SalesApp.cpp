@@ -20,5 +20,6 @@ int main() {
 		cin >> monthlySales;
 		sales.AcumSales(monthlySales);
 	}
-	cout << "Total Sales: $" << sales.getTotalSales();
+	cout << sales.getStore() << "'s Total Sales: $" << sales.getTotalSales() << endl;
+	cout << "The average sales per month: $" << sales.getAverage(numberOfMonths) << endl;
 }
