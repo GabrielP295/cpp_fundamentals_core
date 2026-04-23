@@ -6,7 +6,7 @@ FileCreator::FileCreator(string FileName) {
 
 void FileCreator::WriteFile(string StoreName, double JanSales, double FebSales, double MarSales, double AprSales) {
 	double totalSales = JanSales + FebSales + MarSales + AprSales;
-	this->MyFile << StoreName + ", " << JanSales << ", " << FebSales << ", " << MarSales << ", " << AprSales << ", " << totalSales;
+	this->MyFile << StoreName + ", " << JanSales << ", " << FebSales << ", " << MarSales << ", " << AprSales << ", " << totalSales << "\n";
 }
 
 void FileCreator::WriteHeader() {
