@@ -11,5 +11,4 @@ int main() {
 		cout << "Enter store name " + i;
 		cin >> storeName;
 	}
-	storeSales.WriteFile();
 }
