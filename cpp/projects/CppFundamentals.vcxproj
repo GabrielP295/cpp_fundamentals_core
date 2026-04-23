@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GradesOfStudentsVectors.cpp" />
+    <ClCompile Include="CreateCSV.cpp" />
+    <ClCompile Include="FileCreator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileCreator.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
