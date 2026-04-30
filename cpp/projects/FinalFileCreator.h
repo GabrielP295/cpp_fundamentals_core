@@ -4,12 +4,12 @@
 #include <fstream>
 using namespace std;
 
-class FileCreator {
+class FinalFileCreator {
 private:
 	ofstream MyFile;
-public: 
-	FileCreator(string);
-	void WriteFile(string, double, double, double, double);
+public:
+	FinalFileCreator(string);
+	void WriteFile(string, int, double, double);
 	void WriteHeader();
 	void CloseFile();
 };
